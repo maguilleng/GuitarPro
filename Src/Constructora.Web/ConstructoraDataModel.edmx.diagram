@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cd0c85121db843f7888213085d945d88" Name="Diagrama1">
+        <EntityTypeShape EntityType="dbAlmacenModel.Application" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAlmacenModel.Empleado" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAlmacenModel.Membership" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAlmacenModel.Profile" Width="1.5" PointX="7.5" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAlmacenModel.Role" Width="1.5" PointX="3" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAlmacenModel.UserInfo" Width="1.5" PointX="7.5" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbAlmacenModel.User" Width="1.5" PointX="5.25" PointY="8.25" IsExpanded="true" />
+        <AssociationConnector Association="dbAlmacenModel.MembershipApplication" ManuallyRouted="false" />
+        <AssociationConnector Association="dbAlmacenModel.RoleApplication" ManuallyRouted="false" />
+        <AssociationConnector Association="dbAlmacenModel.UserApplication" ManuallyRouted="false" />
+        <AssociationConnector Association="dbAlmacenModel.MembershipUser" ManuallyRouted="false" />
+        <AssociationConnector Association="dbAlmacenModel.UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="dbAlmacenModel.FK_UserInfo_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="dbAlmacenModel.UsersInRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

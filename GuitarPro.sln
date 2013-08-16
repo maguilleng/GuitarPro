@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constructora", "Src\Constructora\Constructora.csproj", "{FEBB4608-5919-4822-888E-DD797A03809A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{745ECD7F-21E9-4FDC-BCF1-6E8BCCC06681} = {745ECD7F-21E9-4FDC-BCF1-6E8BCCC06681}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constructora.Web", "Src\Constructora.Web\Constructora.Web.csproj", "{745ECD7F-21E9-4FDC-BCF1-6E8BCCC06681}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constructora.Modules.Proyectos", "Src\Constructora.Modules.Proyectos\Constructora.Modules.Proyectos.csproj", "{852F19D1-3209-4725-A88E-76C83EF31ADA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{745ECD7F-21E9-4FDC-BCF1-6E8BCCC06681} = {745ECD7F-21E9-4FDC-BCF1-6E8BCCC06681}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constructora.Infrastructure", "Constructora.Infrastructure\Constructora.Infrastructure.csproj", "{A366C88C-39AE-4DC8-9718-13B6A2C598BF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{745ECD7F-21E9-4FDC-BCF1-6E8BCCC06681} = {745ECD7F-21E9-4FDC-BCF1-6E8BCCC06681}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEBB4608-5919-4822-888E-DD797A03809A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEBB4608-5919-4822-888E-DD797A03809A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEBB4608-5919-4822-888E-DD797A03809A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEBB4608-5919-4822-888E-DD797A03809A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{745ECD7F-21E9-4FDC-BCF1-6E8BCCC06681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{745ECD7F-21E9-4FDC-BCF1-6E8BCCC06681}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{745ECD7F-21E9-4FDC-BCF1-6E8BCCC06681}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{745ECD7F-21E9-4FDC-BCF1-6E8BCCC06681}.Release|Any CPU.Build.0 = Release|Any CPU
+		{852F19D1-3209-4725-A88E-76C83EF31ADA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{852F19D1-3209-4725-A88E-76C83EF31ADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{852F19D1-3209-4725-A88E-76C83EF31ADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{852F19D1-3209-4725-A88E-76C83EF31ADA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A366C88C-39AE-4DC8-9718-13B6A2C598BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A366C88C-39AE-4DC8-9718-13B6A2C598BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A366C88C-39AE-4DC8-9718-13B6A2C598BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A366C88C-39AE-4DC8-9718-13B6A2C598BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

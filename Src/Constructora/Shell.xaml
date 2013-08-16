@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="Constructora.Shell"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:prism="clr-namespace:Microsoft.Practices.Prism.Regions;assembly=Microsoft.Practices.Prism"
+    xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+    xmlns:views="clr-namespace:Constructora.Views"
+    xmlns:infrastructure="clr-namespace:Constructora.Infrastructure;assembly=Constructora.Infrastructure"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400"
+    Loaded="UserControl_Loaded">
+
+    <UserControl.Resources>
+        <infrastructure:CurrentUserToVisibilityConverter x:Key="userToVisibilityConverter"/>
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <!--FontFamily="/Infrastructure;component/Assets/Fuentes/TCM.TTF#Tw Cen MT"-->
+
+        <!--<telerik:RadExpander HorizontalAlignment="Stretch" ExpandDirection="Down" IsExpanded="True"
+                             telerik:StyleManager.Theme="{StaticResource Theme}">-->
+        <Grid HorizontalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="30"/>
+                <!--<RowDefinition Height="25"/>-->
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!--<TextBlock Grid.Column="1" Text="GERENCIA DE GEOLOGÍA Y YACIMIENTOS" Foreground="{StaticResource AccentBrush}" 
+                       FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0"/>-->
+            <ContentControl Grid.RowSpan="2" prism:RegionManager.RegionName="HeaderRegion" x:Name="HeaderRegionPlaceholder" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Top"/>
+            <ContentControl Grid.Column="2" prism:RegionManager.RegionName="UserRegion" x:Name="UserRegionPlaceholder" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Top"/>
+            <ContentControl Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="1" prism:RegionManager.RegionName="MainMenuRegion" x:Name="MainMenuRegionPlaceholder" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"/>
+            <ContentControl Grid.Column="2" Grid.Row="2" prism:RegionManager.RegionName="SubMenuRegion" x:Name="SubMenuRegionPlaceholder" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Bottom"/>
+        </Grid>
+        <!--</telerik:RadExpander>-->
+
+
+        <!--<Rectangle Grid.Row="1" Visibility="{Binding CurrentUser, Converter={StaticResource userToVisibilityConverter}}" Fill="{StaticResource BlueBackgroundColorBrush}" Height="4" />-->
+
+        <!--<StackPanel Grid.Row="2">
+            <views:LoginUserControl/>
+            <Button x:Name="loadButtton" Command="{Binding LoadModuleCommand}" Content="Cargar Módulo"/>
+        </StackPanel>-->
+
+        <ContentControl prism:RegionManager.RegionName="MainContentRegion" Grid.Row="2"
+                        HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"/>
+    </Grid>
+</UserControl>
