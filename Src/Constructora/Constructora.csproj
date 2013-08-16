@@ -183,7 +183,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Constructora.Infrastructure\Constructora.Infrastructure.csproj">
+    <ProjectReference Include="..\Constructora.Infrastructure\Constructora.Infrastructure.csproj">
       <Project>{a366c88c-39ae-4dc8-9718-13b6a2c598bf}</Project>
       <Name>Constructora.Infrastructure</Name>
     </ProjectReference>

@@ -13,10 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constructora.Modules.Proyec
 		{745ECD7F-21E9-4FDC-BCF1-6E8BCCC06681} = {745ECD7F-21E9-4FDC-BCF1-6E8BCCC06681}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constructora.Infrastructure", "Constructora.Infrastructure\Constructora.Infrastructure.csproj", "{A366C88C-39AE-4DC8-9718-13B6A2C598BF}"
-	ProjectSection(ProjectDependencies) = postProject
-		{745ECD7F-21E9-4FDC-BCF1-6E8BCCC06681} = {745ECD7F-21E9-4FDC-BCF1-6E8BCCC06681}
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constructora.Infrastructure", "Src\Constructora.Infrastructure\Constructora.Infrastructure.csproj", "{A366C88C-39AE-4DC8-9718-13B6A2C598BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -111,17 +111,17 @@
     <None Include="Properties\AppManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Constructora.Infrastructure\Constructora.Infrastructure.csproj">
-      <Project>{a366c88c-39ae-4dc8-9718-13b6a2c598bf}</Project>
-      <Name>Constructora.Infrastructure</Name>
-      <Private>False</Private>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Page Include="Views\ProyectosMainUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Constructora.Infrastructure\Constructora.Infrastructure.csproj">
+      <Project>{a366c88c-39ae-4dc8-9718-13b6a2c598bf}</Project>
+      <Name>Constructora.Infrastructure</Name>
+      <Private>False</Private>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

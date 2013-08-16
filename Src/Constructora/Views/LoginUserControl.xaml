@@ -9,11 +9,11 @@
     Loaded="UserControl_Loaded">
 
     <StackPanel VerticalAlignment="Center">
-        <Image Source="/AlmacenSL.Infrastructure;component/Assets/Images/ToolsLogo.png"
+        <Image Source="/Constructora.Infrastructure;component/Assets/Images/ToolsLogo.png"
                HorizontalAlignment="Center" Grid.Column="1" Width="100" Height="100"/>
-        <TextBlock Text="Control de Almacen" Foreground="{StaticResource LightBlueColorBrush}" FontSize="18"
+        <TextBlock Text="Seguimiento de Obras (codename GuitarPro)" Foreground="{StaticResource LightBlueColorBrush}" FontSize="18"
                    HorizontalAlignment="Center" Grid.Column="1"/>
-        <TextBlock Text="Versión Beta 2013" Foreground="DarkGray" FontSize="14" FontStyle="Italic"
+        <TextBlock Text="Plantilla Inicial" Foreground="DarkGray" FontSize="14" FontStyle="Italic"
                    HorizontalAlignment="Center" Grid.Column="1"/>
         <Grid Background="{StaticResource BlueBackgroundColorBrush}" Margin="0,50,0,0">
             <Grid.RowDefinitions>

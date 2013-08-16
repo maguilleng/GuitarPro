@@ -9,7 +9,7 @@
     <Grid x:Name="LayoutRoot" Background="White">
         <StackPanel Orientation="Horizontal" Margin="10,0,10,0">
             <Image Width="50" Height="50" Source="/Constructora.Infrastructure;component/Assets/Images/ToolsLogo.png"/>
-            <TextBlock Text="Control de Almacen"  FontSize="24" Foreground="{StaticResource AccentBrush}"
+            <TextBlock Text="Seguimiento de Obras"  FontSize="24" Foreground="{StaticResource AccentBrush}"
                        Margin="15,0,0,0" VerticalAlignment="Center"/>
         </StackPanel>
     </Grid>
